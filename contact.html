@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,300;0,600;0,700;1,100&family=Raleway:wght@700&family=Spectral:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body style="background-color: rgba(242, 243, 244, 0.45);">
+    <header class="poolHeader" id="scrollNavPool">
+        <nav id="poolNav">
+            <a href="index.html"><img id="log" src="assets/J&C Fiberglass logo (Small).jpg"style="border-radius: 5%;"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pool.html">Design Options</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+	</header>
+
+
+    <!--Contact Us-->
+    <div class="contactHeader">
+        <h1>Contact Us</h1>    
+    </div>
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.9135988374596!2d-82.50531748497748!3d28.027116482660478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c113705f16a5%3A0x85413fa89d57c5e3!2s3669%20W%20Waters%20Ave%2C%20Tampa%2C%20FL%2033614!5e0!3m2!1sen!2sus!4v1635451210152!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col2">
+               <div>
+                   <i class="fas fa-building" id="buildingIcon"></i>
+                   <span>
+                       <h5>3669 W Waters Ave,</h5>
+                       <p>Tampa, FL 33614</p>
+                   </span>
+               </div> 
+               <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>Phone: (813)-443-3542</h5>
+                        <p>Monday - Saturday, 10AM to 6PM</p>
+                    </span>
+                </div> 
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>Email: tampa@igui.com</h5>
+                        <p>Email Us!</p>
+                    </span>
+                </div> 
+            </div>
+            <div class="contact-col2">
+
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name*" required>
+                    <input type="email" name="email" placeholder="Enter email address*" required>
+                    <input type="text" name="subject" placeholder="Enter your phone number*" required>
+                    <textarea rows="4" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="submitContact">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+        <!--Footer-->
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social_icon">
+                <li><a href="https://www.facebook.com/people/JC-Pools/100072096162755/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/poolsjc/?utm_medium=copy_link"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pool.html">Design Options</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p>@2021 J&C Pools | All Rights Reserved</p>
+        </footer>
+    
+    
+        <!--JS for Toggle Menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+    
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+    
+            var navLinks = document.getElementById("navLinks");
+    
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+            window.onscroll = function(){scrollFunction()};
+    
+            function scrollFunction(){
+                if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+                    document.getElementById("scrollNavPool").style.background = "linear-gradient(rgba(53,134,255,0.8), rgba(53,134,255,0.9))"; 
+                    document.getElementById("scrollNavPool").style.height = "60px";
+                    document.getElementById("poolNav").style.padding = "0.5% 6%" ;
+                    document.getElementById("log").style.width = "65%";
+                }
+                else{
+                    document.getElementById("log").style.width = "90%";
+                    document.getElementById("log").style.transition = "0.5s";
+                    document.getElementById("scrollNavPool").style.height = "100px";
+                    document.getElementById("scrollNavPool").style.background = "linear-gradient(rgba(53,134,255,1), rgba(53,134,255,1))" ;
+                    document.getElementById("poolNav").style.padding = "1% 6%" ;
+                }
+            }
+        </script>
+            
+        <script src="jsfile.js"></script>
+        <script src="https://kit.fontawesome.com/29a33a9005.js" crossorigin="anonymous"></script>
+</body>
+</html>

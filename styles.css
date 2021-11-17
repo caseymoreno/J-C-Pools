@@ -1,0 +1,1128 @@
+/* 1 */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;  
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+	z-index: 2;
+}
+/* 2 */
+.slider{
+    background: url(assets/ImperailEx.jpg);
+    
+    background-attachment: fixed;
+    background-position: center;
+
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+.myslide{
+	display: none;
+	overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.prev, .next{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.5s;
+	user-select: none;
+}
+.prev:hover, .next:hover{
+	color: rgba(77,249,255,0.7); /* blue */
+}
+.next{
+	right: 0;
+}
+.dotsbox{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 20px;
+	cursor: pointer;
+}
+.dot{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+    transition: 0.5s;
+}
+/* /2 */
+
+/* javascript */
+.active, .dot:hover{
+	border-color: rgba(77,249,255,0.7); /* blue */
+}
+/* /javascript */
+
+/* muslide add fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+/* /muslide add fade */
+
+/* 3 */
+
+@-webkit-keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+
+@keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+/* /3 */
+
+/* 4 */
+.headerPhotos{
+	transform: scale(1.5, 1.5);
+	-webkit-animation-name: zoomin;
+  	-webkit-animation-duration: 40s;
+  	animation-name: zoomin;
+  	animation-duration: 40s;  
+}
+#home-1{ 
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(assets/ImperailEx.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#home-2{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(assets/DSC_0003-scaled.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#home-3{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(assets/ImgSqaure.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#home-4{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(assets/IMG_0146.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+@-webkit-keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+
+
+@keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+/* /4 */
+
+
+
+/* 5 *//*
+@media screen and (max-width: 700px){
+	.myslide{
+		height: 500px;
+	}
+
+	@-webkit-keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+
+	@keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+	.txt h1{
+		font-size: 40px;
+	}
+	.txt p{
+		font-size: 13px;
+	}
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background:#00FFFF;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        padding: 30px;
+    }
+
+}
+/* /5 */
+
+/* 6 */
+@media screen and (max-width: 520px){
+	.txt h1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.sign{
+		margin-right: 20px;
+	}
+	.sign a{
+		font-size: 12px;
+	}
+}
+/* /6 */
+
+/* /6 */
+nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00FFFF;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color:#fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: linear-gradient(rgba(4,9,30,0.3), rgba(4,9,30,0.3));
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #00FFFF;
+    background: #00FFFF;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+/*Pool Info AKA Courses*/
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #3586ff;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.course-col h3, i{
+    color: #fff;
+}
+.course-col i{
+    font-size: 40px;
+}
+#course-col-Design{
+    background: #2dcee0;
+}
+.btn-outline{
+    text-align: center;
+    outline: none;
+    border: solid 1px #fff;
+    font-size: 16px;
+    line-height: 1;
+    padding: 16px 40px;
+    margin-bottom: 5%;
+    border-radius: 30px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.btn-outline:hover,
+.btn-outline:focus{
+    background: #fff;
+    color: #0081D5;
+}
+.btn-outline:active{
+    background: #fff;
+    color: #35ebff;
+}
+
+/*Fiberglass Home*/
+.homeDivider{
+    color: #fff;
+    text-align: center;
+    padding-top: 4%;
+}
+.homeDivider h1{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.fiberglassBenefits{
+    margin: auto;
+    width: 100%;
+}
+.home-col1{
+    flex-basis: 80%;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.home-col1 img{
+    width: 100%;
+    height: 100%;
+}
+.home-col1 h1{
+    width: 100%;
+    text-align: center;
+    color: #0081D5;
+}
+.home-col1 p{
+    padding-left: 50px;
+    color: black;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+}
+.homeRow{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.nilt{
+    flex-direction: column;
+    text-align: center;
+}
+/*****Financing Banner HomePage*****/
+.homeDivider2{
+    color: #fff;
+    text-align: center;
+    padding-top: 3%;
+    width: 100%;
+}
+.homeDivider2 h1{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.financingHome{
+    width: 100%;
+    height: 40vh;
+    margin-top: 0;
+    margin: auto;
+    text-align: center;
+}
+.financingHome h1{
+    color: #0081D5;
+    text-align: center;
+}
+.financeRow{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    column-gap: 200px;
+}
+.financingBanner h1{
+    text-align: center;
+}
+.financingBanner button{
+    text-align: center;
+}
+.finance-col{
+    flex-basis: 31%;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)) ;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.finance-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.finance-col h3, i{
+    color: #fff;
+}
+/*Visit Us Home Page*/
+.getInTouch{
+    margin: auto;
+    width: 100%;
+}
+.visitDiv{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+    justify-content: right;
+}
+.frontMapLeft{
+    padding-left: 5%;
+    width: 50%;
+    float: left;
+    padding-bottom: 10%;
+}
+.contactUsRight{
+    padding-right: 5%;
+    width: 50%;
+    float: right;
+}
+.contactUsRight h1{
+    background: linear-gradient(rgba(53,134,255,1), rgba(53,134,255,1)); 
+    width: 100%;
+    color: #fff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+.frontPageContact{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.contactIconsFront{
+    display: flex;
+    flex-direction: row;
+}
+/*---Footer---*/
+footer{
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .social_icon,
+footer .menu
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .social_icon li,
+footer .menu li
+{
+    list-style-type: none;
+}
+footer .social_icon li a,
+footer .menu li a
+{
+    font-size: 1em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+}
+footer .menu li a
+{
+    font-size: 1em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+footer .menu li a:hover{
+    opacity: 1;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 1px;
+    font-size: 0.7em;
+}
+footer .wave{
+    position: absolute;
+    top: -70px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(assets/wave.png);
+    background-size: 1000px 100px;
+}
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave {
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_02 {
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+/*
+#poolShells{
+    background: #33CFFF;
+}*/
+/*For Mobile*/
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+    .nav-links{
+        position: absolute;
+        background: #0081D5;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    #poolNav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    .poolFront{
+        padding-top: 15%;
+    }
+    .mobile-pad{
+        padding-bottom: 500px;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .txt h1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.sign{
+		margin-right: 20px;
+	}
+	.sign a{
+		font-size: 12px;
+	}
+    .homeRow{
+        flex-direction: column;
+    }
+    .financeRow{
+        flex-direction: column;
+    }
+    .financingHome{
+        margin-bottom: 450px;
+    }
+    .visitH{
+        margin-top: 5%;
+    }
+    .myslide{
+		height: 500px;
+	}
+
+	@-webkit-keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+
+	@keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+	.txt h1{
+		font-size: 40px;
+	}
+	.txt p{
+		font-size: 13px;
+	}
+    .text-box h1{
+        font-size: 20px;
+    }
+}
+
+.nuts img{
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+
+    background-repeat: no-repeat;
+    
+    position: relative;
+}
+
+/*-----About Us Page-----*/
+.sub-Header ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.sub-Header h1{
+    margin-top: 100px;
+    color: #fff;
+}
+.homeHeaderPt h1{
+    color: #fff;
+}
+.about-us-Banner-Image{ 
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(assets/ol.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-us-Banner-Image h1{
+    color: #fff;
+    text-align: center;
+}
+.aboutUsRow{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.about-us{
+    width: 70%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    margin-top: 3%;
+    padding: 15px 0 25px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+.tampaImg{
+    height: 90%;
+}
+#lastRow{
+    padding-bottom: 10%;
+}
+/*-----Pools Page-----*/
+.poolHeader{
+    background: linear-gradient(rgba(53,134,255,1), rgba(53,134,255,1));
+    height: 100px;
+    padding: 8px 12px;
+    transition: 0.5s;
+}
+.poolHeader ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.poolBanner{
+    text-align: center;
+}
+.poolBanner h1{
+    color: #0081D5;
+    padding-top: 9%;
+    padding-bottom: 2%;
+}
+.designGrid{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10%;
+}
+.row1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.pool-col1{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+}
+.layer2{
+    background: linear-gradient(rgba(67, 68, 71, 0.2), rgba(67,68,71,0.2));
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 49%;
+}
+.layer2 button{
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    margin-top: 50%;
+    background: linear-gradient(rgba(67, 68, 71, 0.2), rgba(67,68,71,0.2));
+}
+.layer2:hover button {
+    bottom: 40%;
+    opacity: 1;
+}
+.layer2:hover{
+    background: linear-gradient(rgba(53,134,255,0.8), rgba(53,134,255,0.9));
+}
+.pool-col1 img{
+    width: 100%;
+    height: 100%;
+    transition: 5s;
+}
+.poolTextInfo{
+    text-align: left;
+}
+.poolTextInfo h3{
+    color: #0081D5;
+}
+
+/*individual Pools*/
+.productDisplay{
+    width: 80%;
+    min-height: 100vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 7%;
+}
+.imperialImg{
+    background-image: url(assets/ImperailEx.jpg);
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.ibizaImg{
+    background-image: url(assets/DSC_0003-scaled.jpg);
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.florenceImg{
+    background-image: url(assets/Example.jpg);
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.lagunaImg{
+    background-image: url(assets/ImgSqaure.jpg);
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.royalImg{
+    background-image: url(assets/royalEx.jpg);
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.productDisplay h1{
+    color: #0081D5;
+}
+.productDisplay h4{
+    font-weight: normal;
+    color: #808080;
+}
+.productInfo{
+    min-height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 12%;
+}
+#product-Image{
+    padding-left: 5%;
+    width: 50%;
+    float: left;
+}
+#product-Image img{
+    border: 15px solid rgba(4,9,30,0.1);
+    border-radius: 10%;
+}
+#product-Text{
+    padding-top: 2%;
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+#product-Text h4{
+    text-align: center;
+    font-size: 24px;
+    color: #0081D5;
+}
+#product-Text p{
+    color: #808080;
+    font-size: 20px;
+}
+#product-Text i{
+    display: inline-block;
+    padding: 3% 20px 20px 20px;
+}
+.contact-col div{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col input, .contact-col textarea{
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 0.5%;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/****Contact Us****/
+.contactHeader{
+    text-align: center;
+}
+.contactHeader h1{
+    color: #0081D5;
+    padding-top: 9%;
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10%;
+}
+.contact-col2{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col2 div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col2 div .fa{
+    font-size: 32px;
+    color: black;
+    margin: 10px;
+    margin-right: 30px;
+}
+#buildingIcon{
+    font-size: 32px;
+    color: black;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col2 div p{
+    color: #555;
+    padding: 0;
+    font-weight: bold;
+}
+.contact-col2 div h5{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+.contact-col2 input, .contact-col2 textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.submitContact{
+    text-align: center;
+    outline: none;
+    border: solid 1px #fff;
+    font-size: 16px;
+    line-height: 1;
+    padding: 16px 40px;
+    margin-bottom: 5%;
+    background: linear-gradient(rgba(67, 68, 71, 0.7), rgba(67,68,71,0.7));
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.submitContact:hover,
+.submitContact:focus{
+    background: #0081D5;
+    color: #fff;
+}
+.submitContact:active{
+    background: #fff;
+    color: #35ebff;
+}
+@media(max-width: 700px){
+    #product-Text h4{
+        text-align: center;
+        font-size: 24px;
+    }
+    .productInfo{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 150px;
+    }
+    #product-Image{
+        width: 80%;
+        float: none;
+    }
+    #product-Image img{
+        display: block;
+        width: 100%;
+    }
+    #product-Text{
+        width: 100%;
+    }
+    .contact-col input, .contact-col textarea{
+        width: 100%;
+    }
+    .row1{
+        display: block;
+    }
+    .poolBanner{
+        padding-top: 10%;
+    }
+    .contactHeader{
+        padding-top: 10%;
+    }
+    .contactUsRight{
+        text-align: center;
+        padding-top: 500px;
+        display: block;
+        width: 100%;
+        padding-bottom: 15%;
+        float: none;
+    }
+    .imperialImg{
+        min-height: 50vh;
+    }
+    .florenceImg{
+        min-height: 50vh;
+    }
+    .ibizaImg{
+        min-height: 50vh;
+    }
+    .lagunaImg{
+        min-height: 50vh;
+    }
+    .royalImg{
+        min-height: 50vh;
+    }
+}

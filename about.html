@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,300;0,600;0,700;1,100&family=Raleway:wght@700&family=Spectral:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    </head>
+    <body style="background-color: rgba(242, 243, 244, 0.45);">
+        <header class="sub-Header" id="scrollNavPool">
+            <nav>
+                <a href="index.html"><img id="log" src="assets/J&C Fiberglass logo (Small).jpg"style="border-radius: 5%;"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="pool.html">Design Options</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </header>
+
+        <div class="about-us-Banner">
+            <div>
+                <div class="about-us-Banner-Image">
+                    <h1>ABOUT US</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <!--About us Content-->
+        <section class="about-us">
+            <div class="aboutUsRow">
+                <div class="about-col">
+                    <h1>Quality Molds Made in Tampa</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+                </div>
+                <div class="about-col">
+                    <img class="tampaImg" src="assets/tampa.jpeg">
+                </div>
+            </div>
+            <div class="aboutUsRow">
+                <div class="about-col">
+                    <img class="installImg" src="assets/installPool.jpg">
+                </div>
+                <div class="about-col">
+                    <h1 style="text-align: right;">Quality Molds Made in Tampa</h1>
+                    <p style="text-align: right;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+                </div>
+            </div>
+            <div class="aboutUsRow" id="lastRow">
+                <div class="about-col">
+                    <h1>Financing Options to fit your needs</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+                </div>
+                <div class="about-col">
+                    <img class="tampaImg" src="assets/tampa.jpeg">
+                </div>
+            </div>
+        </section>
+
+
+
+    <!--Footer-->
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href="https://www.facebook.com/people/JC-Pools/100072096162755/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/poolsjc/?utm_medium=copy_link"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="pool.html">Design Options</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p>@2021 J&C Pools | All Rights Reserved</p>
+    </footer>
+
+
+    <!--JS for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+
+        var navLinks = document.getElementById("navLinks");
+    
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        window.onscroll = function(){scrollFunction()};
+
+        function scrollFunction(){
+            if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+                document.getElementById("scrollNavPool").style.background = "linear-gradient(rgba(53,134,255,0.8), rgba(53,134,255,0.9))"; 
+                document.getElementById("log").style.width = "65%";
+            }
+            else{
+                document.getElementById("scrollNavPool").style.background = "";
+                document.getElementById("log").style.width = "85%";
+                document.getElementById("log").style.transition = "0.5s";
+            }
+        }
+    </script>
+        
+    <script src="jsfile.js"></script>
+    <script src="https://kit.fontawesome.com/29a33a9005.js" crossorigin="anonymous"></script>
+    </body>
+</html>

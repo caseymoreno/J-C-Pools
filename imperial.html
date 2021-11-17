@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Imperial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,300;0,600;0,700;1,100&family=Raleway:wght@700&family=Spectral:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>    
+<body style="background-color: rgba(242, 243, 244, 0.45);">
+    <header class="poolHeader" id="scrollNavPool">
+        <nav id="poolNav">
+            <a href="index.html"><img id="log" src="assets/J&C Fiberglass logo (Small).jpg"style="border-radius: 5%;"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" style="color: black;"><strong>Home</strong></a></li>
+                    <li><a href="about.html" style="color: black;"><strong>About</strong></a></li>
+                    <li><a href="pool.html" style="color: black;"><strong>Design Options</strong></a></li>
+                    <li><a href="contact.html" style="color: black;"><strong>Contact</strong></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+	</header>
+
+    <section class="poolFront">
+        <div class="productDisplay">
+            <h1 class="productName">IMPERIAL</h1>
+            <h4><strong>LENGTH: </strong>23 Feet  <strong>WIDTH: </strong>11 Feet  <strong>DEPTH: </strong>3.5-5.5 Feet</h4>
+            <div class="imperialImg">
+            </div>
+        </div>
+    </section>
+
+    <section class="productInfo">
+        <div id="product-Image">
+            <img src="assets/Imperial.jpeg" width="70%">
+        </div>
+        <div class="poolSpecs" id="product-Text">
+            <h4>The Imperial is the perfect pool for you!</h4>
+            <p style="text-align: left;">The Imperial is a beautifully designed 23' X 11' pool that will perfectly fit your home.</p>
+            <i class="fas fa-ruler-horizontal" style="font-size: 45px; color: #0081D5;"><p style="font-size: 16px;"><strong>Length: 23 Feet</strong></p></i>
+            <i class="fas fa-ruler-vertical" style="font-size: 45px; color: #0081D5;"><p style="font-size: 16px;"><strong>Width: 11 Feet</strong></p></i>
+            <i class="fab fa-deezer" style="font-size: 45px; color: #0081D5;"><p style="font-size: 16px;"><strong>Depth: 3.5 - 5.5 Feet</strong></p></i>
+            <h1 style="text-align: center; color: #0081D5; padding-bottom: 2%;">Reach out to us for a Free Quote!</h1>
+        </div>
+        <div class="contact-col">
+
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name*" required>
+                <input type="email" name="email" placeholder="Enter email address*" required>
+                <input type="text" name="subject" placeholder="Enter your phone number*" required>
+                <textarea rows="4" name="message" placeholder="Message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!--Footer-->
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href="https://www.facebook.com/people/JC-Pools/100072096162755/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/poolsjc/?utm_medium=copy_link"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="pool.html">Design Options</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p>@2021 J&C Pools | All Rights Reserved</p>
+    </footer>
+
+
+    <!--JS for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        window.onscroll = function(){scrollFunction()};
+
+        function scrollFunction(){
+            if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+                document.getElementById("scrollNavPool").style.background = "linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1))"; 
+                document.getElementById("scrollNavPool").style.height = "60px";
+                document.getElementById("poolNav").style.padding = "0.5% 6%" ;
+                document.getElementById("log").style.width = "65%";
+            }
+            else{
+                document.getElementById("log").style.width = "90%";
+                document.getElementById("log").style.transition = "0.5s";
+                document.getElementById("scrollNavPool").style.height = "100px";
+                document.getElementById("scrollNavPool").style.background = "linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1))" ;
+                document.getElementById("poolNav").style.padding = "1% 6%" ;
+            }
+        }
+    </script>
+        
+    <script src="jsfile.js"></script>
+    <script src="https://kit.fontawesome.com/29a33a9005.js" crossorigin="anonymous"></script>
+</body>
+</html>

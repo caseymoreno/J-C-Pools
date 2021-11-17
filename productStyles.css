@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+.productDisplay{
+    width: 80%;
+    min-height: 100vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 7%;
+}
+.productImg{
+    background-image: url(assets/ImperailEx.jpg);
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.productDisplay h1{
+    color: #0081D5;
+}
+.productDisplay h4{
+    font-weight: normal;
+    color: #808080;
+}
+.productInfo{
+    min-height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 12%;
+}
+#product-Image{
+    padding-left: 5%;
+    width: 50%;
+    float: left;
+}
+#product-Image img{
+    border: 15px solid rgba(4,9,30,0.1);
+    border-radius: 10%;
+}
+#product-Text{
+    padding-top: 2%;
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+#product-Text h4{
+    text-align: center;
+    font-size: 24px;
+    color: #0081D5;
+}
+#product-Text p{
+    color: #808080;
+    font-size: 20px;
+}
+#product-Text i{
+    display: inline-block;
+    padding: 3% 20px 20px 20px;
+}
+.contact-col div{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col input, .contact-col textarea{
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 0.5%;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: vertical;
+}
+@media(max-width: 700px){
+    .productInfo h1{
+        color: red;
+    }
+}
+/*
+.small-Container{
+    width: 80%;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 8%;
+}
+.row-2{
+    width: 80%;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    padding: 20px;
+    padding-top: 3%;
+}
+.col-2 img{
+    border: 15px solid rgba(4,9,30,0.1);
+    border-radius: 10%;
+}
+.col-2 h4{
+    font-size: 24px;
+    color: #0081D5;
+}
+.col-2 p{
+    color: #808080;
+    font-size: 20px;
+}
+.rise{
+    text-align: right;
+    padding-bottom: 15%;
+}*/
