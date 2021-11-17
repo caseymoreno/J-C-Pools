@@ -1112,7 +1112,7 @@ footer .wave#wave4{
         padding-top: 10%;
     }
     .contactHeader{
-        padding-top: 10%;
+        padding-top: 15%;
     }
     .contactUsRight{
         text-align: center;
@@ -1162,6 +1162,7 @@ footer .wave#wave4{
 .empty{
     margin-bottom: 10%;
 }
+
 @media(max-width: 700px){
     .empty{
         margin-bottom: 15%;
