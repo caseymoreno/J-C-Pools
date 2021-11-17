@@ -729,6 +729,10 @@ footer .wave#wave4{
     .visit-Col iframe{
         width: 100%;
     }
+    .home-col1 p{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .nuts img{
