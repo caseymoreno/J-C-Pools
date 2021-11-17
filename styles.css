@@ -1081,6 +1081,11 @@ footer .wave#wave4{
     color: #35ebff;
 }
 @media(max-width: 700px){
+    .productDisplay{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     #product-Text h4{
         text-align: center;
         font-size: 24px;
@@ -1092,7 +1097,7 @@ footer .wave#wave4{
         padding-bottom: 150px;
     }
     #product-Image{
-        width: 80%;
+        width: 100%;
         float: none;
     }
     #product-Image img{
