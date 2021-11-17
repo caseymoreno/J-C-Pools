@@ -723,6 +723,12 @@ footer .wave#wave4{
     .text-box h1{
         font-size: 20px;
     }
+    .finance-col{
+        padding-bottom: 0;
+    }
+    .frontMapLeft iframe{
+        width: 400px;
+    }
 }
 
 .nuts img{
