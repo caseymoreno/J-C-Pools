@@ -640,6 +640,7 @@ footer .wave#wave4{
     }
     .row{
         flex-direction: column;
+        gap: 1em;
     }
     .nav-links ul li{
         display: block;
@@ -698,6 +699,7 @@ footer .wave#wave4{
     }
     .financeRow{
         flex-direction: column;
+        gap: 1em;
     }
     .myslide{
 		height: 500px;
