@@ -509,7 +509,7 @@ h3{
     text-align: center;
 }
 .frontPageContact{
-    padding-top: 5%;
+    padding-top: 8%;
     display: flex;
     justify-content: space-around;
 }
@@ -693,6 +693,7 @@ footer .wave#wave4{
     .financeRow{
         flex-direction: column;
     }
+    
     .financingHome{
         margin-bottom: 450px;
     }
@@ -726,11 +727,8 @@ footer .wave#wave4{
     .finance-col{
         padding-bottom: 0;
     }
-    .frontMapLeft iframe{
-        width: 400px;
-    }
-    .myslide{ 
-        display: flex;
+    .visit-Col iframe{
+        width: 100%;
     }
 }
 
@@ -1133,5 +1131,34 @@ footer .wave#wave4{
     }
     .royalImg{
         min-height: 50vh;
+    }
+}
+.frontPageVisitUs{
+    width: 90%;
+    margin: auto;
+}
+.visit-Row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.visit-Row > *:nth-child(1) {
+    flex: 1 1 45%;
+}
+.visit-Row > *:nth-child(2) {
+    flex: 1 1 45%;
+}
+.visit-Col h1{
+    background: linear-gradient(rgba(53,134,255,1), rgba(53,134,255,1)); 
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.empty{
+    margin-bottom: 10%;
+}
+@media(max-width: 700px){
+    .empty{
+        margin-bottom: 15%;
     }
 }
