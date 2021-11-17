@@ -729,8 +729,41 @@ footer .wave#wave4{
     .frontMapLeft iframe{
         width: 400px;
     }
-    .headerPhotos{
-        width: 400px;
+    #home-1{ 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+        position: relative;
+    }
+    #home-2{
+        min-height: 100vh;
+        width: 100%;
+        background-image: url(assets/DSC_0003-scaled.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #home-3{
+        min-height: 100vh;
+        width: 100%;
+        background-image: url(assets/ImgSqaure.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #home-4{
+        min-height: 100vh;
+        width: 100%;
+        background-image: url(assets/IMG_0146.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
     }
 }
 
