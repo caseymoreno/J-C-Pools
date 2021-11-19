@@ -23,7 +23,7 @@ header{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-
+    background-size: cover;
 }
 
 .prev, .next{
@@ -115,7 +115,7 @@ header{
     width: 100%;
     background-image: url(assets/ImperailEx.jpg);
     background-attachment: fixed;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -705,7 +705,9 @@ footer .wave#wave4{
 	  from {top: 35%;}
 	  to {top: 50%;}
 	}
-
+	.myslide{
+		height: 500px;
+	}
 	.txt h1{
 		font-size: 40px;
 	}
@@ -726,11 +728,11 @@ footer .wave#wave4{
         padding-right: 0;
     }
     #home-1, #home-2, #home-3{
-        background-size: 100%;
+        background-size: contain;
     }
     #home-4{
         background-position: center;
-        background-size: 100%;
+        background-size: contain;
     }
 }
 
