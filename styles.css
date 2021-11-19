@@ -725,12 +725,12 @@ footer .wave#wave4{
         padding-left: 0;
         padding-right: 0;
     }
-    .myslide{
-        background-size: 200%;
+    #home-1, #home-2, #home-3{
+        background-size: 100%;
     }
-    #home-1, #home-2, #home-3, #home-4{
-        background-size: 200%;
-        background-position: none;
+    #home-4{
+        background-position: center;
+        background-size: 100%;
     }
 }
 
