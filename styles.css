@@ -729,9 +729,10 @@ footer .wave#wave4{
     }
     #home-1, #home-2, #home-3{
         background-size: contain;
+        background-position: initial;
     }
     #home-4{
-        background-position: center;
+        background-position: initial;
         background-size: contain;
     }
 }
