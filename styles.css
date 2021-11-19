@@ -730,6 +730,7 @@ footer .wave#wave4{
     }
     #home-1, #home-2, #home-3, #home-4{
         background-size: 200%;
+        background-position: none;
     }
 }
 
