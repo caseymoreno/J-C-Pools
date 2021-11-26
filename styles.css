@@ -1199,6 +1199,12 @@ footer .wave#wave4{
     .royalImg{
         min-height: 30vh;
     }
+    .floridaImg{
+        min-height: 30vh;
+    }
+    .crystalImg{
+        min-height: 30vh;
+    }
 }
 .frontPageVisitUs{
     width: 90%;
