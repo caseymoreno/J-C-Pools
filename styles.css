@@ -17,6 +17,7 @@ header{
     width: 100%;
 }
 
+
 .myslide{
 	display: none;
 	overflow: hidden;
@@ -738,7 +739,9 @@ footer .wave#wave4{
     .dotsbox{
         padding-bottom: 400px;
     }
-    
+    .fade{
+        height: 300px;
+    }
     .myslide{
         height: 300px;
     }
