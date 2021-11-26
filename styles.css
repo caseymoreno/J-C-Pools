@@ -814,6 +814,33 @@ footer .wave#wave4{
 .tampaImg{
     height: 90%;
 }
+.content-Flow{
+    margin-top: 15%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.content-sidebar{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-sidebar > *:nth-child(1){
+    flex: 1 1 70%;
+    min-width: 30ch;
+}
+.content-sidebar > *:nth-child(2){
+    flex: 1 1 30%;
+    min-width: 15ch;
+}
+
+#tampa-Img{
+    width: 100%;
+    background-image: url(assets/tampa.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+}
 #lastRow{
     padding-bottom: 10%;
 }
@@ -838,7 +865,7 @@ footer .wave#wave4{
     padding-bottom: 2%;
 }
 .designGrid{
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: center;
     padding-bottom: 10%;
@@ -847,6 +874,7 @@ footer .wave#wave4{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
+    gap: 2em;
 }
 .pool-col1{
     flex-basis: 30%;
@@ -933,6 +961,15 @@ footer .wave#wave4{
     background-size: cover;
     position: relative;
 }
+.crystalImg{
+    background-image: url(assets/crystal-installed.jpg);
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 .lagunaImg{
     background-image: url(assets/ImgSqaure.jpg);
     min-height: 100vh;
@@ -944,6 +981,15 @@ footer .wave#wave4{
 }
 .royalImg{
     background-image: url(assets/royalEx.jpg);
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.floridaImg{
+    background-image: url(assets/florida-Installed.jpg);
     min-height: 100vh;
     height: auto;
     width: 100%;
