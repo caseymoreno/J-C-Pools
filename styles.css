@@ -815,10 +815,10 @@ footer .wave#wave4{
     height: 90%;
 }
 .content-Flow{
-    margin-top: 15%;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 5%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 .content-sidebar{
     display: flex;
@@ -834,12 +834,12 @@ footer .wave#wave4{
 }
 
 #tampa-Img{
-    width: 100%;
+    width: 80%;
     background-image: url(assets/tampa.jpeg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 450px;
+    background-size: cover;
+    min-height: 40vh;
 }
 #lastRow{
     padding-bottom: 10%;
@@ -1203,6 +1203,9 @@ footer .wave#wave4{
         min-height: 30vh;
     }
     .crystalImg{
+        min-height: 30vh;
+    }
+    #tampa-Img{
         min-height: 30vh;
     }
 }
