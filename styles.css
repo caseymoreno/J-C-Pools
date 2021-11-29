@@ -1208,6 +1208,9 @@ footer .wave#wave4{
     #tampa-Img{
         min-height: 30vh;
     }
+    .content-Flow{
+        margin-bottom: 15%;
+    }
 }
 .frontPageVisitUs{
     width: 90%;
