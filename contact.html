@@ -65,12 +65,13 @@
             </div>
             <div class="contact-col2">
 
-                <form action="form-handler.php" method="post">
+                <form action="POST " name ="contact-Form" method="POST" data-netlify="true">
                     <input type="text" name="name" placeholder="Enter your name*" required>
                     <input type="email" name="email" placeholder="Enter email address*" required>
                     <input type="text" name="subject" placeholder="Enter your phone number*" required>
                     <textarea rows="4" name="message" placeholder="Message" required></textarea>
                     <button type="submit" class="submitContact">Send Message</button>
+                    <div data-netlfiy-recaptcha="true"></div>
                 </form>
             </div>
         </div>
